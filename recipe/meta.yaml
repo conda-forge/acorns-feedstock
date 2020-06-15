@@ -6,19 +6,15 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/deshanadesai/autodiff/archive/v0.0.1.tar.gz
+  url: https://github.com/deshanadesai/autodiff/archive/v{{ version }}.tar.gz
   sha256: 4ade658b69d2ad744571f9cd657187295eb25a6b9cd43324cfa66668fc5ff62e
 
 build:
   number: 0
-  skip: true  # [win or py<35]
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - {{ compiler('cxx') }}
-    - cmake
-    - make
   host:
     - python
     - pip
@@ -32,7 +28,7 @@ test:
     - tests
 
 about:
-  home: https://github.com/deshanadesai/autodiff
+  home: https://github.com/deshanadesai/acorns
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -41,7 +37,7 @@ about:
   description: |
     ACORNS is an algorithm for automatic differention of algorithms 
     written in a subset of C99 code and its efficient implementation as a Python script. 
-  dev_url: https://github.com/deshanadesai/autodiff
+  dev_url: https://github.com/deshanadesai/acorns
 
 extra:
   recipe-maintainers:
