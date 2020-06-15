@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/deshanadesai/autodiff/archive/v{{ version }}.tar.gz
-  sha256: 4ade658b69d2ad744571f9cd657187295eb25a6b9cd43324cfa66668fc5ff62e
+  sha256: 5253ca7342fa63ec14eb454e72241bd57c21d9c2a1cf2673bcc133bf66c1a54a
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
   run:
     - python
     - pycparser
+    - numpy
 
 test:
   imports:
