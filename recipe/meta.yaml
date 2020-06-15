@@ -32,7 +32,7 @@ about:
   home: https://github.com/deshanadesai/acorns
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: An Easy-To-Use Code Generator for Gradients and Hessians
 
   description: |
