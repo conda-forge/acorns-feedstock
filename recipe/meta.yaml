@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/deshanadesai/autodiff/archive/v{{ version }}.tar.gz
+  url: https://github.com/deshanadesai/acorns/archive/{{ version }}.tar.gz
   sha256: 114d4ea68eb2c7aa978d82b46c602d9efb9019ed39c1aa8fb362b87037723285
 
 build:
