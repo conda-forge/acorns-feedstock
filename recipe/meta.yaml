@@ -1,5 +1,5 @@
 {% set name = "acorns" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/deshanadesai/autodiff/archive/v{{ version }}.tar.gz
-  sha256: 1c9ff852f2bf65b0db20da5b25f44c24c262cfcc06c5fd8d0fe11055a742f685
+  sha256: 114d4ea68eb2c7aa978d82b46c602d9efb9019ed39c1aa8fb362b87037723285
 
 build:
   number: 0
