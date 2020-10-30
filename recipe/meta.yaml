@@ -1,5 +1,5 @@
 {% set name = "acorns" %}
-{% set version = "0.0.4" %}
+{% set version = "1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +7,19 @@ package:
 
 source:
   url: https://github.com/deshanadesai/acorns/archive/{{ version }}.tar.gz
-  sha256: 114d4ea68eb2c7aa978d82b46c602d9efb9019ed39c1aa8fb362b87037723285
+  sha256: 16fa134b60c2d5814f1b8a5ae0672d7e0eb806c231346fa7cc4ffad0be727441
 
 build:
   number: 0
-  noarch: python >= 3.0
+  noarch: python 
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.0
     - pip
   run:
-    - python
+    - python >=3.0
     - pycparser
     - numpy
 
