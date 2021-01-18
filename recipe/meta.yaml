@@ -1,5 +1,5 @@
 {% set name = "acorns" %}
-{% set version = "2.0" %}
+{% set version = "3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/deshanadesai/acorns/archive/{{ version }}.tar.gz
-  sha256: 06d586aa34cfc32296a067d861bcda152f4a9ac4040b30eb8ddf42393a50e575
+  sha256: 0e0d29957c13ad8faf65247ed43a420db64c133f8712f8ff0b3c82cf05b43812
 
 build:
   number: 0
